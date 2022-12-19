@@ -1,9 +1,10 @@
 # python-mongodb-charts
 
 - [Setup](#setup)
-    - [Gitpod](#gitpod)
-    - [Local Machine Requirements](#machine-requirements)
-    - [Browsers and Drivers](#browsers-and-drivers)
+  - [MongoDB](#mongodb)
+  - [Gitpod](#gitpod)
+  - [Local Machine Requirements](#machine-requirements)
+  - [Browsers and Drivers](#browsers-and-drivers)
 - [Run Tests](#run-tests)
 
 This is an example repo for working with MongoDB and visualizing data with MongoDB Charts.
@@ -16,9 +17,20 @@ This section will help you set things up so you can work with this project.
 
 > 💡 Using Gitpod is the recommended way to work with QA at the Point repos, but you can clone this locally as well
 
+### MongoDB
+
+> 👀 This repo assumes that you have created a free, [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) account.
+
+- This cloud-based account is where we will create databases, collections, and visual charts for our data!
+- You can also install the free [MongoDB Compass](https://www.mongodb.com/products/compass) app for connecting and working with MongoDB.
+
+Create a `.env` file at the Project Root and copy/paste your MongoDB connection string. You can use [example.env](/example.env) to see the formatting.
+
+> Use [this guide](https://www.mongodb.com/docs/guides/atlas/connection-string/) to get the connection string
+
 ### Gitpod
 
-With Gitpod, you just open a workspace and you're done 🎉
+With Gitpod, you just open a workspace and you're done 🎉 You can skip the rest of the setup, but make sure you have a free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) account!
 
 ### Machine Requirements
 
