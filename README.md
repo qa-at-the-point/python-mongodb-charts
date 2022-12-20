@@ -6,6 +6,7 @@
   - [Local Machine Requirements](#machine-requirements)
   - [Browsers and Drivers](#browsers-and-drivers)
 - [Run Tests](#run-tests)
+- [Send Data to MongoDB](#send-data-to-mongodb)
 
 This is an example repo for working with MongoDB and visualizing data with MongoDB Charts.
 
@@ -52,5 +53,17 @@ Gitpod and Pylenium will automatically handle the driver binaries needed to work
 
 ```bash
 # Run all tests in the Terminal
-poetry run pytest
+poetry run poe test
+```
+
+You will see a `.report.json` file is created with the test results that we'll send to MongoDB!
+Check out the [pytest-json-report](https://pypi.org/project/pytest-json-report/#format) plugin for more details on what you can do with this JSON report.
+
+## Send Data to MongoDB
+
+Once you've executed some tests, a `.report.json` is created at the Project Root. This report is what we preprocess and send to MongoDB!
+
+```bash
+# example
+python main.py run report send ".report.json" unit functional
 ```

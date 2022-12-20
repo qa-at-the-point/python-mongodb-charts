@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from mongo import config
+from metrics import config
 
 
 def test_required_environment_variables_are_available():

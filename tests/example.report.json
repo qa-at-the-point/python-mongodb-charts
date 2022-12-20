@@ -1,0 +1,117 @@
+{
+  "created": 1671561250.911975,
+  "duration": 0.9322488307952881,
+  "exitcode": 0,
+  "root": "/Users/carlos/dev/python-mongodb-charts",
+  "environment": {
+    "Python": "3.10.1",
+    "Platform": "macOS-12.6-x86_64-i386-64bit",
+    "Packages": { "pytest": "7.2.0", "pluggy": "1.0.0" },
+    "Plugins": {
+      "xdist": "3.1.0",
+      "parallel": "0.1.1",
+      "json-report": "1.5.0",
+      "Faker": "15.3.4",
+      "allure-pytest": "2.12.0",
+      "metadata": "2.0.4",
+      "reportportal": "5.1.3",
+      "anyio": "3.6.2",
+      "cov": "3.0.0"
+    }
+  },
+  "summary": { "passed": 3, "total": 3, "collected": 3 },
+  "collectors": [
+    {
+      "nodeid": "",
+      "outcome": "passed",
+      "result": [
+        { "nodeid": "tests/test_setup.py", "type": "Module" },
+        { "nodeid": "tests/test_transform.py", "type": "Module" }
+      ]
+    },
+    {
+      "nodeid": "tests/test_setup.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "tests/test_setup.py::test_required_environment_variables_are_available",
+          "type": "Function",
+          "lineno": 4
+        },
+        {
+          "nodeid": "tests/test_setup.py::test_connect_to_mongo",
+          "type": "Function",
+          "lineno": 8
+        }
+      ]
+    },
+    {
+      "nodeid": "tests/test_transform.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "tests/test_transform.py::test_transform_unix_time_to_date",
+          "type": "Function",
+          "lineno": 3
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "nodeid": "tests/test_setup.py::test_required_environment_variables_are_available",
+      "lineno": 4,
+      "outcome": "passed",
+      "keywords": [
+        "test_required_environment_variables_are_available",
+        "tests/test_setup.py",
+        "python-mongodb-charts"
+      ],
+      "setup": { "duration": 0.03796875011175871, "outcome": "passed" },
+      "call": { "duration": 0.00019854214042425156, "outcome": "passed" },
+      "teardown": { "duration": 0.00024195783771574497, "outcome": "passed" }
+    },
+    {
+      "nodeid": "tests/test_setup.py::test_connect_to_mongo",
+      "lineno": 8,
+      "outcome": "passed",
+      "keywords": [
+        "test_connect_to_mongo",
+        "tests/test_setup.py",
+        "python-mongodb-charts"
+      ],
+      "setup": { "duration": 0.0002262501511722803, "outcome": "passed" },
+      "call": { "duration": 0.6755718749482185, "outcome": "passed" },
+      "teardown": { "duration": 0.00047637498937547207, "outcome": "passed" }
+    },
+    {
+      "nodeid": "tests/test_transform.py::test_transform_unix_time_to_date",
+      "lineno": 3,
+      "outcome": "passed",
+      "keywords": [
+        "test_transform_unix_time_to_date",
+        "tests/test_transform.py",
+        "python-mongodb-charts"
+      ],
+      "setup": { "duration": 0.0008059160318225622, "outcome": "passed" },
+      "call": { "duration": 0.0005036250222474337, "outcome": "passed" },
+      "teardown": { "duration": 0.000877083046361804, "outcome": "passed" }
+    }
+  ],
+  "warnings": [
+    {
+      "message": "The hookimpl CovPlugin.pytest_configure_node uses old-style configuration options (marks or attributes).\nPlease use the pytest.hookimpl(optionalhook=True) decorator instead\n to configure the hooks.\n See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers",
+      "category": "PytestDeprecationWarning",
+      "when": "config",
+      "filename": "/Users/carlos/dev/python-mongodb-charts/.venv/lib/python3.10/site-packages/pytest_cov/plugin.py",
+      "lineno": 256
+    },
+    {
+      "message": "The hookimpl CovPlugin.pytest_testnodedown uses old-style configuration options (marks or attributes).\nPlease use the pytest.hookimpl(optionalhook=True) decorator instead\n to configure the hooks.\n See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers",
+      "category": "PytestDeprecationWarning",
+      "when": "config",
+      "filename": "/Users/carlos/dev/python-mongodb-charts/.venv/lib/python3.10/site-packages/pytest_cov/plugin.py",
+      "lineno": 265
+    }
+  ]
+}
