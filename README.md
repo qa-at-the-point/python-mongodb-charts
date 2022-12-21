@@ -1,6 +1,11 @@
 # Python + MongoDB + Charts
 
-<iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);width: 100vw;height: 100vh;"  src="https://charts.mongodb.com/charts-project-0-dizba/embed/dashboards?id=73a21a88-8372-424f-8f2e-c3faef71a10a&theme=dark&autoRefresh=true&maxDataAge=2592000&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed"></iframe>
+<div>
+  <iframe
+    style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);width: 100vw;height: 100vh;"
+    src="https://charts.mongodb.com/charts-project-0-dizba/embed/dashboards?id=73a21a88-8372-424f-8f2e-c3faef71a10a&theme=dark&autoRefresh=true&maxDataAge=2592000&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed">
+  </iframe>
+</div>
 
 - [Setup](#setup)
   - [MongoDB](#mongodb)
